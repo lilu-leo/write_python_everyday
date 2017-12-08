@@ -13,15 +13,13 @@ import os
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 
-path = '/Users/leo/Desktop/零基础Python入门课件和代码/lect09_代码'
-os.chdir(path)
 
 def main():
     '''
     主函数
     '''
     
-    aqi_data = pd.read_csv('china_city_aqi.csv')
+    aqi_data = pd.read_csv('china_city_aqi_demo.csv')
     print('基本信息： ')
     print(aqi_data.info())
     
