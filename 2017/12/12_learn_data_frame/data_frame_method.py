@@ -186,6 +186,8 @@ chicago.sort_values('salary', ascending=False, inplace=True)
 chicago = chicago.groupby('department').apply(ranker)
 
 chicago[chicago.dept_rank == 1].head(7)
+
+        
     
 
 
